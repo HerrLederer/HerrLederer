@@ -1,0 +1,7 @@
+e:\adventofcode\1_Sonar\obj\Debug\1_Sonar.csproj.AssemblyReference.cache
+e:\adventofcode\1_Sonar\obj\Debug\1_Sonar.csproj.CoreCompileInputs.cache
+e:\adventofcode\1_Sonar\bin\Debug\1_Sonar.exe.config
+e:\adventofcode\1_Sonar\bin\Debug\1_Sonar.exe
+e:\adventofcode\1_Sonar\bin\Debug\1_Sonar.pdb
+e:\adventofcode\1_Sonar\obj\Debug\1_Sonar.exe
+e:\adventofcode\1_Sonar\obj\Debug\1_Sonar.pdb
