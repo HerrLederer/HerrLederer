@@ -9,7 +9,7 @@ namespace _04_Bingo
         private int[] Draws;
         private uint current = 0;
 
-        public NumberSequence(String input)
+        public NumberSequence(string input)
         {
             Draws = input.Split(',').Select(v => int.Parse(v)).ToArray();
         }

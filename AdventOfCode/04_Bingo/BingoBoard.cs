@@ -76,7 +76,7 @@ namespace _04_Bingo
             }
         }
 
-        private void InitializeRow(uint rowNumber, String rowContent)
+        private void InitializeRow(uint rowNumber, string rowContent)
         {
             int[] inputs = ParseRowInputString(rowContent);
             for(uint i = 0; i < inputs.Length; i++)

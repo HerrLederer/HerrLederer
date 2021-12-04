@@ -9,16 +9,16 @@ namespace _04_Bingo
 {
     public class InputFileReader
     {
-        public InputFileReader(String fileName)
+        public InputFileReader(string fileName)
         {
             var fileContent = File.ReadAllLines(fileName);
             var firstLine = fileContent[0];
             NumberSequence = new NumberSequence(firstLine);
             fileContent = fileContent.Skip(1).ToArray();
 
-            IList<String> boardContent = new List<String>();
+            IList<string> boardContent = new List<string>();
 
-            foreach(String line in fileContent)
+            foreach(string line in fileContent)
             {
                 if(line.Length <= 1)
                 {
