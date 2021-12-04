@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _04_Bingo
 {
@@ -47,7 +44,7 @@ namespace _04_Bingo
             return Boards;
         }
 
-        private NumberSequence NumberSequence = null;
+        private readonly NumberSequence NumberSequence = null;
 
         public NumberSequence GetNumberSequence()
         {

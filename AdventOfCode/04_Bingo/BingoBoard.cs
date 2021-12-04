@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace _04_Bingo
 {
@@ -12,6 +9,7 @@ namespace _04_Bingo
     {
         private const uint Boardsize = 5;
         private readonly BingoField[,] BoardContent = new BingoField[Boardsize, Boardsize];
+        private int? finalDraw = null;
 
         public BingoBoard(string[] input)
         {
@@ -19,24 +17,6 @@ namespace _04_Bingo
             {
                 InitializeRow(i, input[i]);
             }
-        }
-
-        public void Dump()
-        {
-            if (!Program.verbose)
-                return;
-
-            for (uint row = 0; row < Boardsize; row++)
-            {
-                for (uint column = 0; column < Boardsize; column++)
-                {
-                    BoardContent[row, column].Dump();
-                }
-                Console.Write("\n");
-            }
-            Console.WriteLine("Finished: " + (finalDraw == null ? "no": "yes" ));
-            Console.WriteLine("Value: " + CalculateValue());
-            Console.Write("\n");
         }
 
         public void DumpFinalResult()
@@ -57,10 +37,7 @@ namespace _04_Bingo
                 }
             }
 
-            if (finalDraw != null)
-                return value * finalDraw.Value;
-            else
-                return 0;
+            return (finalDraw != null) ? value * finalDraw.Value : 0;
         }
 
 
@@ -93,7 +70,6 @@ namespace _04_Bingo
             return bingoFieldValues;
         }
 
-
         public bool Finished()
         {
             return finalDraw != null;
@@ -112,11 +88,10 @@ namespace _04_Bingo
             return false;
         }
 
-        private int? finalDraw = null;
-
         private bool RowsAreFinished()
         {
-            for (uint row = 0; row < Boardsize; row++) {
+            for (uint row = 0; row < Boardsize; row++)
+            {
                 bool finished = true;
                 for (uint column = 0; column < Boardsize; column++)
                 {
@@ -143,6 +118,4 @@ namespace _04_Bingo
             return false;
         }
     }
-
-
 }

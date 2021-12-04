@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bingo.cs" />
     <Compile Include="BingoBoard.cs" />
     <Compile Include="BingoField.cs" />
     <Compile Include="InputFileReader.cs" />

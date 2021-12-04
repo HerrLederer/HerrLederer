@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 
 namespace _04_Bingo
 {
     public class NumberSequence
     {
         private int[] Draws;
-        private uint current = 0;
+        private uint currentDraw = 0;
 
         public NumberSequence(string input)
         {
@@ -16,10 +14,10 @@ namespace _04_Bingo
 
         public int GetNext()
         {
-            if (current == Draws.Length)
+            if (currentDraw == Draws.Length)
                 return -1;
 
-            return Draws[current++];
+            return Draws[currentDraw++];
         }
     }
 }
