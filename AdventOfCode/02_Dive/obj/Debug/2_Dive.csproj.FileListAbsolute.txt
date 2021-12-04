@@ -1,0 +1,7 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\obj\Debug\2_Dive.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\obj\Debug\2_Dive.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\bin\Debug\2_Dive.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\bin\Debug\2_Dive.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\bin\Debug\2_Dive.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\obj\Debug\2_Dive.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\2_Dive\obj\Debug\2_Dive.pdb
