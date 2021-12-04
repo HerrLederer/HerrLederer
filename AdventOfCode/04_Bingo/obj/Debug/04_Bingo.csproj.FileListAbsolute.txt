@@ -1,0 +1,7 @@
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.csproj.AssemblyReference.cache
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.csproj.CoreCompileInputs.cache
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.exe.config
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.exe
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.pdb
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.exe
+\\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.pdb
