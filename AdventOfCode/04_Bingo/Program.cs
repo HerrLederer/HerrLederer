@@ -8,11 +8,11 @@ namespace _04_Bingo
 {
     class Program
     {
-        public static bool verbose = true;
+        public static bool verbose = false;
 
         static void Main(string[] args)
         {
-            StartGame(@"..\..\input_test.txt");
+            StartGame(@"..\..\input.txt");
             KeepConsoleOpen();
         }
 
@@ -38,13 +38,9 @@ namespace _04_Bingo
 
                 if (draw == -1)
                 {
-                    Console.WriteLine("No more draws left");
+                    if (Program.verbose)
+                        Console.WriteLine("No more draws left");
                     break;
-                }
-
-                if(draw == 13)
-                {
-                    System.Diagnostics.Debugger.Launch();
                 }
 
                 if (Program.verbose)
@@ -69,7 +65,6 @@ namespace _04_Bingo
                     Console.WriteLine("All boards done");
                     break;
                 }
-
             }
 
 

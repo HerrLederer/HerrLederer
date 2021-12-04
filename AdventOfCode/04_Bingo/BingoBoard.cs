@@ -34,7 +34,7 @@ namespace _04_Bingo
                 }
                 Console.Write("\n");
             }
-            Console.WriteLine("Finished: " + (finalDraw != -1 ? "yes": "no" ));
+            Console.WriteLine("Finished: " + (finalDraw == null ? "no": "yes" ));
             Console.WriteLine("Value: " + CalculateValue());
             Console.Write("\n");
         }
@@ -56,7 +56,11 @@ namespace _04_Bingo
                         value += field.Number;
                 }
             }
-            return value * finalDraw;
+
+            if (finalDraw != null)
+                return value * finalDraw.Value;
+            else
+                return 0;
         }
 
 
@@ -92,7 +96,7 @@ namespace _04_Bingo
 
         public bool Finished()
         {
-            return finalDraw != -1;
+            return finalDraw != null;
         }
 
         public bool Finished(int draw)
@@ -100,22 +104,15 @@ namespace _04_Bingo
             if (Finished())
                 return true;
 
-            if(draw == 13)
-            {
-
-                System.Diagnostics.Debugger.Launch();
-            }
-
             if( RowsAreFinished() || ColumnsAreFinished())
             {
-                if (finalDraw == -1)
-                    finalDraw = draw;
+                finalDraw = draw;
                 return true;
             }
             return false;
         }
 
-        private int finalDraw = -1;
+        private int? finalDraw = null;
 
         private bool RowsAreFinished()
         {

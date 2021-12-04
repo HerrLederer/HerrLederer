@@ -9,7 +9,6 @@ namespace _04_Bingo
 {
     public class InputFileReader
     {
-
         public InputFileReader(String fileName)
         {
             var fileContent = File.ReadAllLines(fileName);
@@ -47,7 +46,6 @@ namespace _04_Bingo
         {
             return Boards;
         }
-
 
         private NumberSequence NumberSequence = null;
 

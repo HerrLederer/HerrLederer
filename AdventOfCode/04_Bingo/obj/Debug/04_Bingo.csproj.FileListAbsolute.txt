@@ -5,3 +5,10 @@
 \\server\ledi\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.pdb
 \\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.exe
 \\server\ledi\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\bin\Debug\04_Bingo.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\04_Bingo\obj\Debug\04_Bingo.pdb
