@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 
-namespace _05_
+namespace _05_Hydrothermal_Venture
 {
     public class InputFileReader
     {
@@ -18,7 +16,7 @@ namespace _05_
             var fileContent = File.ReadAllLines(fileName);
             foreach (var line in fileContent)
             {
-                new Line(line);
+                Line.CreateLineFromInput(line);
             }
         }
     }

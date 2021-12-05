@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _05_
+namespace _05_Hydrothermal_Venture
 {
     internal class Point
     {
@@ -18,18 +14,63 @@ namespace _05_
             get;
         }
 
-
         public Point(int x, int y)
         {
             X = x;
             Y = y;
         }
 
-        public Point(string inputAsInFile)
+        public static Point CreateFromInput(string inputAsInFile)
         {
             var tokens = inputAsInFile.Split(',');
-            X = int.Parse(tokens[0]);
-            Y = int.Parse(tokens[1]);
+            return new Point( int.Parse(tokens[0]), int.Parse(tokens[1]));
+        }
+
+        public Point(Point p)
+        {
+            X = p.X;
+            Y = p.Y;
+        }
+
+        public Point GetNeightbor(Direction direction)
+        {
+            switch (direction)
+            {
+                case Direction.HorizontalLeftwards:
+                    return new Point(X - 1, Y);
+
+                case Direction.HorizontalRightwards:
+                    return new Point(X + 1, Y);
+
+                case Direction.VerticalDownwards:
+                    return new Point(X, Y + 1);
+
+                case Direction.VerticalUpwards:
+                    return new Point(X, Y - 1);
+
+                case Direction.DiagonalRightDownwards:
+                    return new Point(X + 1, Y + 1);
+
+                case Direction.DiagonalRightUpwards:
+                    return new Point(X + 1, Y - 1);
+
+                case Direction.DiagonalLeftDownwards:
+                    return new Point(X - 1, Y + 1);
+
+                case Direction.DiagonalLeftUpwards:
+                    return new Point(X - 1, Y - 1);
+
+                case Direction.None:
+                    throw new Exception("Direction: None. Might be the same point?");
+
+                default:
+                    throw new Exception("unsupported direction of line");
+            }
+        }
+
+        public override string ToString()
+        {
+            return "( " + X + " / " + Y + " )";
         }
 
         public static bool operator ==(Point a, Point b)

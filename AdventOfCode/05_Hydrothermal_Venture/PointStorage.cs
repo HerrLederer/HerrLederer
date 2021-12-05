@@ -1,12 +1,10 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _05_
+namespace _05_Hydrothermal_Venture
 {
-    static class PointStorage
+    static internal class PointStorage
     {
         private static IDictionary<Point, int> storage = new Dictionary<Point, int>();
 

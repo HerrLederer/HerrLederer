@@ -1,64 +1,90 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _05_
+﻿namespace _05_Hydrothermal_Venture
 {
-    class Line
+    public enum Direction
     {
-        public Line(string inputAsInFile)
+        None,
+        HorizontalLeftwards,
+        HorizontalRightwards,
+        VerticalDownwards,
+        VerticalUpwards,
+        DiagonalRightDownwards,
+        DiagonalRightUpwards,
+        DiagonalLeftDownwards,
+        DiagonalLeftUpwards
+    }
+
+    internal class Line
+    {
+        Point Start
+        {
+            get;
+        }
+
+        Point End
+        {
+            get;
+        }
+
+        public static Line CreateLineFromInput(string inputAsInFile)
         {
             var rx = new System.Text.RegularExpressions.Regex(" -> ");
             string[] tokens = rx.Split(inputAsInFile);
-            Point start = new Point(tokens[0]);
-            Point end = new Point(tokens[1]);
-            CreateLine(start, end);
+            return new Line(Point.CreateFromInput(tokens[0]),
+                            Point.CreateFromInput(tokens[1]));
         }
 
         public Line(Point start, Point end)
         {
-            CreateLine(start, end);
+            Start = start;
+            End = end;
+            CreatePointsOnLine();
         }
 
-        private void CreateLine(Point start, Point end)
+        Direction LineDirection
         {
-            if (start.X == end.X)
-                CreatePointsForVerticalLine(start, end);
-            else if (start.Y == end.Y)
+            get
             {
-                CreatePointsForHorizontalLine(start, end);
-            }
-            else
-            {
-                // we ignore this case
+                if (Start.X < End.X)
+                {
+                    if (Start.Y < End.Y)
+                        return Direction.DiagonalRightDownwards;
+                    else if (Start.Y > End.Y)
+                        return Direction.DiagonalRightUpwards;
+                    else
+                        return Direction.HorizontalRightwards;
+                }
+                else if (Start.X > End.X)
+                {
+                    if (Start.Y < End.Y)
+                        return Direction.DiagonalLeftDownwards;
+                    else if (Start.Y > End.Y)
+                        return Direction.DiagonalLeftUpwards;
+                    else
+                        return Direction.HorizontalLeftwards;
+                }
+                else // start.X == end.X -> Vertical
+                {
+                    if (Start.Y < End.Y)
+                        return Direction.VerticalDownwards;
+                    else if (Start.Y > End.Y)
+                        return Direction.VerticalUpwards;
+                    else // both X and Y are identical -> no direction
+                        return Direction.None;
+                }
             }
         }
 
-        private void CreatePointsForVerticalLine(Point start, Point end)
+        private void CreatePointsOnLine()
         {
-            for( int i = Min(start.Y, end.Y); i <= Max(start.Y, end.Y); i++)
+            Point p = new Point(Start);
+            while (p != End)
             {
-                PointStorage.Add(new Point(start.X, i));
+                PointStorage.Add(p);
+                p = p.GetNeightbor(LineDirection);
             }
-        }
 
-        private void CreatePointsForHorizontalLine(Point start, Point end)
-        {
-            for (int i = Min(start.X, end.X); i <= Max(start.X, end.X); i++)
-            {
-                PointStorage.Add(new Point(i, start.Y));
-            }
-        }
-
-        private int Max(int a, int b)
-        {
-            return a > b ? a : b;
-        }
-        private int Min(int a, int b)
-        {
-            return a < b ? a : b;
+            // don't forget the end of the line.
+            PointStorage.Add(p);
         }
     }
 }
