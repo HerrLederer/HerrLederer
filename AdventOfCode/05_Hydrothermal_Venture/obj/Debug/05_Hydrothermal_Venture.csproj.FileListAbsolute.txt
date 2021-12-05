@@ -1,0 +1,7 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\obj\Debug\05_Hydrothermal_Venture.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\obj\Debug\05_Hydrothermal_Venture.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\bin\Debug\05_Hydrothermal_Venture.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\bin\Debug\05_Hydrothermal_Venture.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\bin\Debug\05_Hydrothermal_Venture.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\obj\Debug\05_Hydrothermal_Venture.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\05_Hydrothermal_Venture\obj\Debug\05_Hydrothermal_Venture.pdb
