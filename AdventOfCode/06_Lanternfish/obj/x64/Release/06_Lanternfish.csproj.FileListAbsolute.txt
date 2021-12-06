@@ -1,0 +1,6 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\x64\Release\06_.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\x64\Release\06_.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\x64\Release\06_.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\x64\Release\06_Lanternfish.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\x64\Release\06_.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\x64\Release\06_.pdb

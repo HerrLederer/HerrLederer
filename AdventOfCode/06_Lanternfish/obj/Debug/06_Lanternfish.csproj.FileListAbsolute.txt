@@ -1,0 +1,7 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\Debug\06_.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\Debug\06_.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\bin\Debug\06_.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\Debug\06_Lanternfish.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\Debug\06_Lanternfish.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\Debug\06_.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\06_\obj\Debug\06_.pdb
