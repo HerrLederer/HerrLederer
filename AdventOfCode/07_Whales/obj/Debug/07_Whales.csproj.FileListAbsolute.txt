@@ -1,0 +1,7 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\obj\Debug\07_Whales.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\obj\Debug\07_Whales.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\bin\Debug\07_Whales.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\bin\Debug\07_Whales.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\bin\Debug\07_Whales.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\obj\Debug\07_Whales.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\07_Whales\obj\Debug\07_Whales.pdb
