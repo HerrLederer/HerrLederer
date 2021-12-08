@@ -1,0 +1,7 @@
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\obj\Debug\08_7_Digit_Display.csproj.AssemblyReference.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\obj\Debug\08_7_Digit_Display.csproj.CoreCompileInputs.cache
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\bin\Debug\08_7_Digit_Display.exe.config
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\bin\Debug\08_7_Digit_Display.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\bin\Debug\08_7_Digit_Display.pdb
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\obj\Debug\08_7_Digit_Display.exe
+E:\AdventOfCode\HerrLederer\AdventOfCode\08_7_Digit_Display\obj\Debug\08_7_Digit_Display.pdb
